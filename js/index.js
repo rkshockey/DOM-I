@@ -45,6 +45,7 @@ headerImg.setAttribute(`src`, `img/header-img.png`);
 const accentImg = document.querySelector(`#middle-img`);
 accentImg.src = `img/mid-page-accent.jpg`;
 
+//nav bar
 const link1 = document.querySelector(`nav a:nth-of-type(1)`)
 const link2 = document.querySelector(`nav a:nth-of-type(2)`)
 const link3 = document.querySelector(`nav a:nth-of-type(3)`)
@@ -58,3 +59,30 @@ link4.textContent = `Features`;
 link5.textContent = `About`;
 link6.textContent = `Contact`;
 
+//main blurb
+const title = document.querySelector(`.cta-text h1`);
+const button = document.querySelector(`.cta-text button`);
+title.textContent = `DOM Is Awesome`;
+button.textContent = `Get Started`;
+
+//details
+const featuresTitle = document.querySelector(`.text-content:nth-of-type(1) h4`);
+const featuresContent = featuresTitle.nextSibling
+const aboutTitle = document.querySelector(`.text-content:nth-of-type(2) h4`);
+const aboutContent = document.querySelector(`.text-content:nth-of-type(2) p`);
+const servicesTitle = document.querySelector(`.bottom-content .text-content:nth-of-type(1) h4`);
+const servicesContent = document.querySelector(`.bottom-content .text-content:nth-of-type(1) p`);
+const productTitle = document.querySelector(`.bottom-content .text-content:nth-of-type(2) h4`);
+const productContent = document.querySelector(`.bottom-content .text-content:nth-of-type(2) p`);
+const visionTitle = document.querySelector(`.bottom-content .text-content:nth-of-type(3) h4`);
+const visionContent = document.querySelector(`.bottom-content .text-content:nth-of-type(3) p`);
+featuresTitle.textContent = `Features`;
+aboutTitle.textContent = `About`;
+servicesTitle.textContent = `Services`;
+productTitle.textContent = `Product`;
+visionTitle.textContent = `Vision`;
+featuresContent.textContent = `Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.`;
+aboutContent.textContent = `About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.`;
+servicesContent.textContent = `Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.`;
+productContent.textContent = `Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.`;
+visionContent.textContent = `Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.`;
