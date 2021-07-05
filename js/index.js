@@ -102,12 +102,19 @@ const copyright = document.querySelector(`footer p`);
 copyright.textContent = `Copyright Great Idea! 2018`;
 
 //Add content
-document.querySelector(`nav`).style.color = `green`;
+link1.style.color = `green`
+link2.style.color = `green`
+link3.style.color = `green`
+link4.style.color = `green`
+link5.style.color = `green`
+link6.style.color = `green`
 const greatLink = document.createElement(`a`)
 greatLink.textContent = `Great`
 greatLink.href = `#`
+greatLink.style.color = `green`
 document.querySelector(`nav`).prepend(greatLink)
 const ideaLink = document.createElement(`a`)
 ideaLink.textContent = `Idea`
 ideaLink.href = `#`
+ideaLink.style.color = `green`
 document.querySelector(`nav`).appendChild(ideaLink)
