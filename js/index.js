@@ -86,3 +86,17 @@ aboutContent.textContent = `About content elementum magna eros, ac posuere elvit
 servicesContent.textContent = `Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.`;
 productContent.textContent = `Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.`;
 visionContent.textContent = `Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.`;
+
+//contact
+const contactTitle = document.querySelector(`.contact h4`);
+const contactLine1 = contactTitle.nextSibling;
+const contactLine2 = contactLine1.nextSibling;
+const contactLine3 = contactLine2.nextSibling;
+contactTitle.textContent = `Contact`;
+contactLine1.textContent = `123 Way 456 Street Somewhere, USA`
+contactLine2.textContent = `1 (888) 888-8888`
+contactLine3.textContent = `sales@greatidea.io`
+
+//Copyright
+const copyright = document.querySelector(`footer p`);
+copyright.textContent = `Copyright Great Idea! 2018`;
