@@ -100,3 +100,14 @@ contactLine3.textContent = `sales@greatidea.io`
 //Copyright
 const copyright = document.querySelector(`footer p`);
 copyright.textContent = `Copyright Great Idea! 2018`;
+
+//Add content
+document.querySelector(`nav`).style.color = `green`;
+const greatLink = document.createElement(`a`)
+greatLink.textContent = `Great`
+greatLink.href = `#`
+document.querySelector(`nav`).prepend(greatLink)
+const ideaLink = document.createElement(`a`)
+ideaLink.textContent = `Idea`
+ideaLink.href = `#`
+document.querySelector(`nav`).appendChild(ideaLink)
