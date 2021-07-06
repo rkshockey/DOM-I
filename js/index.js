@@ -39,4 +39,82 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', `img/logo.png`);
+const headerImg = document.getElementById(`cta-img`);
+headerImg.setAttribute(`src`, `img/header-img.png`);
+const accentImg = document.querySelector(`#middle-img`);
+accentImg.src = `img/mid-page-accent.jpg`;
+
+//nav bar
+const link1 = document.querySelector(`nav a:nth-of-type(1)`)
+const link2 = document.querySelector(`nav a:nth-of-type(2)`)
+const link3 = document.querySelector(`nav a:nth-of-type(3)`)
+const link4 = document.querySelector(`nav a:nth-of-type(4)`)
+const link5 = document.querySelector(`nav a:nth-of-type(5)`)
+const link6 = document.querySelector(`nav a:nth-of-type(6)`)
+link1.textContent = `Services`;
+link2.textContent = `Product`;
+link3.textContent = `Vision`;
+link4.textContent = `Features`;
+link5.textContent = `About`;
+link6.textContent = `Contact`;
+
+//main blurb
+const title = document.querySelector(`.cta-text h1`);
+const button = document.querySelector(`.cta-text button`);
+title.textContent = `DOM Is Awesome`;
+button.textContent = `Get Started`;
+
+//details
+const featuresTitle = document.querySelector(`.text-content:nth-of-type(1) h4`);
+const featuresContent = featuresTitle.nextSibling
+const aboutTitle = document.querySelector(`.text-content:nth-of-type(2) h4`);
+const aboutContent = document.querySelector(`.text-content:nth-of-type(2) p`);
+const servicesTitle = document.querySelector(`.bottom-content .text-content:nth-of-type(1) h4`);
+const servicesContent = document.querySelector(`.bottom-content .text-content:nth-of-type(1) p`);
+const productTitle = document.querySelector(`.bottom-content .text-content:nth-of-type(2) h4`);
+const productContent = document.querySelector(`.bottom-content .text-content:nth-of-type(2) p`);
+const visionTitle = document.querySelector(`.bottom-content .text-content:nth-of-type(3) h4`);
+const visionContent = document.querySelector(`.bottom-content .text-content:nth-of-type(3) p`);
+featuresTitle.textContent = `Features`;
+aboutTitle.textContent = `About`;
+servicesTitle.textContent = `Services`;
+productTitle.textContent = `Product`;
+visionTitle.textContent = `Vision`;
+featuresContent.textContent = `Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.`;
+aboutContent.textContent = `About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.`;
+servicesContent.textContent = `Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.`;
+productContent.textContent = `Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.`;
+visionContent.textContent = `Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.`;
+
+//contact
+const contactTitle = document.querySelector(`.contact h4`);
+const contactLine1 = contactTitle.nextSibling;
+const contactLine2 = contactLine1.nextSibling;
+const contactLine3 = contactLine2.nextSibling;
+contactTitle.textContent = `Contact`;
+contactLine1.textContent = `123 Way 456 Street Somewhere, USA`
+contactLine2.textContent = `1 (888) 888-8888`
+contactLine3.textContent = `sales@greatidea.io`
+
+//Copyright
+const copyright = document.querySelector(`footer p`);
+copyright.textContent = `Copyright Great Idea! 2018`;
+
+//Add content
+link1.style.color = `green`
+link2.style.color = `green`
+link3.style.color = `green`
+link4.style.color = `green`
+link5.style.color = `green`
+link6.style.color = `green`
+const greatLink = document.createElement(`a`)
+greatLink.textContent = `Great`
+greatLink.href = `#`
+greatLink.style.color = `green`
+document.querySelector(`nav`).prepend(greatLink)
+const ideaLink = document.createElement(`a`)
+ideaLink.textContent = `Idea`
+ideaLink.href = `#`
+ideaLink.style.color = `green`
+document.querySelector(`nav`).appendChild(ideaLink)
